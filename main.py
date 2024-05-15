@@ -1,4 +1,4 @@
-text = 'freecodecamp is awesome'
+text = 'mrttaqrhknsw ih puggrur'
 custom_key = 'happycoding'
 
 def vigenere(message, key, direction=1):
@@ -30,8 +30,8 @@ def encrypt(message, key):
 def decrypt(message, key):
     return vigenere(message, key, -1)
 
-print(f'\nText: {text}')
+print(f'\nEncrypted text: {text}')
 print(f'\nKey: {custom_key}')
 
-encryption = encrypt(text, custom_key)
-print(f'\nEncrypted text: {encryption}\n')
+decryption = decrypt(text, custom_key)
+print(f'\nDecrypted text: {decryption}\n')
