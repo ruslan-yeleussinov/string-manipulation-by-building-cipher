@@ -13,7 +13,11 @@ def vigenere(message, key, direction=1):
             final_message += char
         else:        
             # Find the right key character to encode/decode
-            key_char = key[key_index % len(key)]
+            key_char = key[key_index % len(key)] # custom_key[0], custom_key[1] and so on.
+            """
+            The key character is obtained by taking the modulus of the current key_index with the length of the key (len(key))
+            to ensure that the key is repeated cyclically if it's shorter than the message.
+            """
             key_index += 1
 
             # Define the offset and the encrypted/decrypted letter
